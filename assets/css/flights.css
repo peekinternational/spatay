@@ -51,11 +51,19 @@ body{
 .flight-tabs .nav-link{
 	display: flex;
 }
+.flight-tabs .nav-link:focus,
+.flight-tabs .nav-link:hover {
+	border-color: transparent;
+	isolation: isolate;
+}
 .flight-tabs .nav-link.active{
 	background-color: #de5921 !important;
 	position: relative;
 	border : 0;
 	border-radius: 50px;
+}
+.flight-tabs .nav-link.active:hover{
+	background-color: transparent !important;
 }
 .plane-circle{
   width: 60px;

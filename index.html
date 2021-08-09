@@ -23,7 +23,8 @@
       <!-- <span class="navbar-toggler-icon"></span> -->
       <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="assets/media/logo.png" class="w-75"></a>
+      <a class="navbar-brand mx-auto mx-lg-0 text-start" href="index.html"><img src="assets/media/logo.png"
+          class="w-75"></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav main-nav ms-auto  mt-lg-0">
           <li class="nav-item">
@@ -202,7 +203,7 @@
                       <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4"> -->
                       <input type="text" name="keyword" id="where-keyword" class="form-control bg-transparent"
                         id="transcripts" placeholder="Karachi, Pakistan (KHR)" style="position: relative;">
-                      <div class="search-dropdown" style="position: absolute; top: 83%;    z-index: 99999;">
+                      <div class="search-dropdown search-where-dropdown"  >
                         <div class="search-container" id="search-where" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
                               <li>
@@ -305,20 +306,20 @@
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
                     
-                    <div class="input-group align-items-center justify-content-between d-flex">
+                    <div class="input-group radio-counter align-items-center justify-content-between d-flex">
                       <!-- <button id="minus" class="btn button-minus">−</button>
                       <input type="number" value="0" id="input" class="form-control p-0 text-center" />
                       <button id="plus" class="btn button-plus">+</button> -->
                       <!-- <input type="button" value="-" class="button-minus" data-field="quantity"> -->
                       <span id="minusAdult" class=" circles minus minus-btn"></span>
-                      <input type="number" step="1" max="" min="0" value="01" name="quantity" id="input-numberAdult" class="quantity-field">
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity" id="input-numberAdult" class="quantity-field quantity-field-number">
                       <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
                       <span id="plusAdult" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                       <!-- <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity"> -->
@@ -331,7 +332,7 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Infant</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                       <!-- <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity"> -->
@@ -482,7 +483,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-round">
-                      <div class="search-dropdown" style="position: absolute; top: 83%;    z-index: 99999;">
+                      <div class="search-dropdown search-where-dropdown">
                         <div class="search-container" id="search-where-round" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
                             <li>
@@ -596,7 +597,7 @@
                   <h4 class="site-font mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                       <!-- <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="01" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity"> -->
@@ -609,7 +610,7 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                        <span id="minusChildround" class=" circles minus minus-btn"></span>
                        <input type="number" step="1" max="" min="0" value="01" name="quantity"
                          id="input-numberChildround" class="quantity-field">
@@ -619,7 +620,7 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Infant</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                       <span id="minusInfantround" class=" circles minus minus-btn"></span>
                       <input type="number" step="1" max="" min="0" value="01" name="quantity"
                         id="input-numberInfantround" class="quantity-field">
@@ -766,7 +767,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-multi1">
-                      <div class="search-dropdown" style="position: absolute; top: 83%;    z-index: 99999;">
+                      <div class="search-dropdown search-where-dropdown">
                         <div class="search-container" id="search-where-multi1" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
                             <li>
@@ -974,7 +975,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <input type="text" class="form-control p-0 ms-2" placeholder="London, England (LHR)" id="where-keyword-multi2">
-                      <div class="search-dropdown" style="position: absolute; top: 83%;    z-index: 99999;">
+                      <div class="search-dropdown search-where-dropdown">
                         <div class="search-container" id="search-where-multi2" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
                             <li>
@@ -1081,7 +1082,7 @@
                   <h4 class="site-font mt-1">Travellers</h4>
                   <div class="col-4 mt-0">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                       <span id="minusAdultMulticity" class=" circles minus minus-btn"></span>
                       <input type="number" step="1" max="" min="0" value="01" name="quantity"
                         id="input-numberAdultMulticity" class="quantity-field">
@@ -1091,7 +1092,7 @@
                   </div>
                   <div class="col-4 mt-0">
                     <label for="inputPassword4" class="form-label">Child</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                      <span id="minusChildMulticity" class=" circles minus minus-btn"></span>
                      <input type="number" step="1" max="" min="0" value="01" name="quantity"
                        id="input-numberChildMulticity" class="quantity-field">
@@ -1101,7 +1102,7 @@
                   </div>
                   <div class="col-4 mt-0">
                     <label for="inputPassword4" class="form-label">Infant</label>
-                    <div class="input-group align-items-center justify-content-between">
+                    <div class="input-group radio-counter align-items-center justify-content-between">
                       <span id="minusInfantMulticity" class=" circles minus minus-btn"></span>
                       <input type="number" step="1" max="" min="0" value="01" name="quantity"
                         id="input-numberInfantMulticity" class="quantity-field">
@@ -1252,8 +1253,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png">
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1274,8 +1275,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1296,8 +1297,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1318,8 +1319,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1340,8 +1341,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1362,8 +1363,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1388,8 +1389,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1410,8 +1411,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1432,8 +1433,8 @@
             <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
-                  <div>
-                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  <div class="custom-image-plane">
+                    <img src="assets/media/home/plane-round.png" >
                   </div>
                   <div class="flight">
                     <div class="top-flight">
@@ -1875,6 +1876,15 @@
             arrows: false,
             centerMode: true,
             centerPadding: '90px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0',
             slidesToShow: 1
           }
         }
