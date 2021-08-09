@@ -588,6 +588,14 @@ td {
   padding-right: 3rem;
 }
 
+.profilebox td {
+  font-family: "Product Sans";
+  font-size: 16px !important;
+  color: #A1A1B4;
+  padding: .7rem .5rem !important;
+  border-color: #A1A1B4;
+}
+
 
 
 .prof-name {

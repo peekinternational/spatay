@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Cream Candy";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+        url("../fonts/Cream Candy.otf") format("opentype"),
+        url("CustomFont.svg#filename") format("svg");
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+        url("../fonts/Product Sans Regular.ttf") format('truetype'),
+        url("CustomFont.svg#filename") format("svg");
+}
+
+body {
+    font-family: "Product Sans";
+}
+body p {
+    color: #A1A1B4;
+    font-size: 16px;
+}
+
+.bg-primary {
+    background: #DE5921 !important;
+}
+
+ .btn-white {
+    background: white;
+    color: #DE5921;
+    font-size: 18px;
+}
+.ticket-name
+{
+    color: #1A1C3D;
+    font-weight: bold;
+    font-size: 43px;
+    text-align: center;
+}
+.ticket-card
+{
+    box-shadow: 0 8px 10px 0 #ebecf0;
+    border-radius: 8px;
+}
+.ticket-info
+{
+    color: #A1A1B4;
+    text-align: center;
+    font-size: 23px;
+}
+
+.btn:hover,
+.btn:focus {}
+
+.btn:active,
+.btn.active {}
+
+*/

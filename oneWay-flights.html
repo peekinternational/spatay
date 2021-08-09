@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spatay</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="assets/css/slider.css"> -->
   <link rel="stylesheet" href="assets/css/nouislider.min.css">
-  <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
+  <link rel="stylesheet" href="assets/css/flights.css">
+  <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -78,7 +80,8 @@
             <label class="from">Date</label>
             <div class="input-container d-flex align-items-center">
               <i class="far fa-calendar-alt locationicon"></i>
-              <input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
+               <input type="text" placeholder="12 May - Return" name="calander" id="datepicker-multi1"
+                 class="inputfield datepicker ">
             </div>
           </div>
 
@@ -663,7 +666,10 @@
 
   <script src='assets/js/bootstrap.min.js'></script>
   <script src="assets/js/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="assets/js/selectordrop.js"></script>
   <script src="assets/js/nouislider.min.js"></script>
+   <script src="assets/js/bootstrap-slider.js"></script>
   <script>
     let rangeSlider = document.querySelectorAll('.range-slider');
       for (let i = 0; i < rangeSlider.length; i++) { let rangeSliderUI=rangeSlider[i].querySelector(".range-slider-ui"),
@@ -683,8 +689,8 @@
         rangeSliderValueMax.addEventListener("change", function () { rangeSliderUI.noUiSlider.set([null, this.value])
         }); } }
   </script>
-  <!-- <script src="assets/js/selectordrop.js"></script> -->
-  <script src="assets/js/bootstrap-slider.js"></script>
+  
+ 
 
   
   <script>
@@ -776,13 +782,17 @@
      $('#airlinefilter').removeClass('active-filter');
      $('#timefilter').removeClass('active-filter');
     });
-    var slider = document.getElementById("myRange");
-    var output = document.getElementById("demo");
-    output.innerHTML = 'RS '+slider.value+'/-';
+    // var slider = document.getElementById("myRange");
+    // var output = document.getElementById("demo");
+    // output.innerHTML = 'RS '+slider.value+'/-';
 
-    slider.oninput = function () {
-      output.innerHTML = 'RS ' + this.value + '/-';
-    }
+    // slider.oninput = function () {
+    //   output.innerHTML = 'RS ' + this.value + '/-';
+    // }
+
+    $( "#datepicker-multi1" ).datepicker({
+    dateFormat: 'd M - Return'
+    });
   </script>
   
 </body>

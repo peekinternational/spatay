@@ -79,7 +79,7 @@ body{
 	color: #A1A1B4;
 }
 .flight-tabs .nav-link.active .plane-circle{
-	top: 1px;
+  top: 1px;
   display: block;
   position: absolute;
   right: -5px;
@@ -98,7 +98,7 @@ body{
 	border: 1px solid #dcdcde;
 }
 .selected-tag{
-	background-color: #1A1C3D;
+  background-color: #1A1C3D;
   color: #fff;
   text-transform: uppercase;
   width: 190px;
@@ -113,7 +113,7 @@ body{
   letter-spacing: 1px;
 }
 .flight_time{
-	font-weight: 600;
+  font-weight: 600;
   color: #DE5921;
   font-size: 24px;
 }

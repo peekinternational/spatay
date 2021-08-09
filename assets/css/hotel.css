@@ -36,6 +36,10 @@ body {
 	opacity: 0.9;
 	padding: 2.3rem;
 }
+.hotel-page-icon {
+	width: 100%;
+	text-align: end;
+}
 
 #flightbox input {
 	font-size: 12px !important;
