@@ -101,7 +101,7 @@ body{
 	color: #fff;
 }
 .selected-flight{
-	background-color: #EBECF0;
+	background-color: rgb(245, 245, 248, .4);
 	border-radius: 8px;
 	border: 1px solid #dcdcde;
 }
@@ -127,8 +127,8 @@ body{
 }
 .round-text{
 	color: #1A1C3D;
-  font-size: 14px !important;
-  font-weight: 800;
+  font-size: 21px !important;
+  font-weight: bold;
   text-transform: uppercase;
   font-family: 'Product Sans';
 }
@@ -138,6 +138,9 @@ body{
 }
 .flight-price{
 	font-family: 'Roboto', sans-serif;
+	color: #1B1B23;
+	font-size: 30px !important;
+	font-weight: bold !important;
 }
 .active-bg{
 	background-color: #de5921;
@@ -183,7 +186,7 @@ body{
 	border-radius: 8px;
     border: 1px solid #ddd;
     margin-top: 15px;
-    padding: 15px;
+    padding: 17px;
     margin-right: 15px;
 }
 .payment-box.active{
@@ -191,8 +194,8 @@ body{
 }
 .payment-text{
 	color: #1A1C3D;
-	font-size: 25px;
-	line-height: 34px;
+	font-size: 24px;
+	
 }
 
 

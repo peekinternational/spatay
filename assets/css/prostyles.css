@@ -28,10 +28,10 @@ body {
   background-color: #1A1C3D;
   color: #FFFFFF;
   text-align: center;
-  padding-top: .5rem;
+  padding-top: 1.3rem;
   letter-spacing: 2px;
   font-weight: bold;
-  padding-bottom: .5rem;
+  padding-bottom: 1.2rem;
   font-size: 60px;
 }
 
@@ -90,14 +90,14 @@ body {
 .mp {
   background-color: #1A1C3D;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   top: 24px;
   left: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   font-family: "Product sans";
@@ -131,35 +131,6 @@ body {
   margin-right: 10px;
   margin-top: 2.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .point-box {
   font-family: "Product sans", Sans-serif;
@@ -201,43 +172,6 @@ body {
   color: #DE5921;
 }
 
-/* .points {
-  font-family: "Product sans", Sans-serif;
-  font-size: 11px;
-  font-weight: bold;
-  padding-left: 574px;
-  color: #a1a1b4;
-
-} */
-
-/* .points-rs {
-  color: #de5921;
-  font-size: 74px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1rem;
-} */
-
-/* .total-points {
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  padding-top: 1rem;
-} */
-
-/* .earn-rs {
-  color: #de5921;
-  font-size: 50px;
-  font-weight: bold;
-  text-align: right;
-  padding-top: 3rem;
-} */
-
-/* .earn-points {
-  font-size: 13px;
-  padding-left: 5rem;
-  font-weight: bold;
-} */
 
 .pia-point-icon {
   width: 100px;
@@ -372,8 +306,15 @@ td {
 .prof-box {
   font-family: "Product sans", Sans-serif;
   height: auto;
-  /* padding-left: 5rem; */
-  /* padding-top: 4rem; */
+  box-shadow: 0 8px 20px 0 #ebecf0;
+}
+.prof-box input::placeholder
+{
+  font-size: 16px !important;
+  color: #A1A1B4 !important;
+  font-family: "Product sans",
+  Sans-serif;
+  
 }
 .profilebox .input-group {
   position: relative;
@@ -388,15 +329,15 @@ td {
 }
 .support-container
 {
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 .bluebox
 {
   padding-bottom: 3.5rem;
   padding-top: 3.5rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 5rem;
+  padding-right: 6.5rem;
   background-color: #1A1C3D;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -416,8 +357,8 @@ td {
   border-bottom-left-radius: 6px;
   padding-bottom: 3.5rem;
   padding-top: 3.5rem;
-  padding-left: 3.5rem;
-  padding-right: 4.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .support-section .label-fullname
 {
@@ -486,7 +427,7 @@ td {
 
 .heading-talk {
   font-family: "Product sans", Sans-serif;
-  font-size: 32px;
+  font-size: 42px;
   color: #FFFFFF;
   
 }
@@ -550,8 +491,8 @@ td {
 .sm-line {
   font-family: "Product sans",
     Sans-serif;
-  font-size: 14px;
-  padding-right: 1rem;
+  font-size: 16px;
+ 
   color: #FFFFFF;
  
 }
@@ -581,9 +522,10 @@ td {
 .sendBtn {
   background-color: #de5921;
   color: #FFFFFF;
-  border-radius: 2px;
-  font-size: 12px;
-  padding: 9px 27px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 12px 29px;
   border: none;
 }
 
@@ -613,10 +555,14 @@ td {
 
 .prof-email {
   font-family: "Product sans", Sans-serif;
-  font-size: 10.5px;
+  font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   padding-bottom: 6px;
+}
+.prof-hotel .active
+{
+  color: #de5921 !important;
 }
 
 .boxed {
@@ -1081,7 +1027,8 @@ td {
 
 .profilebox .changeemailaddress {
   color: #de5921;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 19px;
   text-decoration: none;
 }
 
@@ -1129,6 +1076,7 @@ td {
   font-family: "Product sans";
   font-size: 28px;
   color: #283646;
+  line-height: 36px;
   font-weight: bold;
 }
 
