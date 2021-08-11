@@ -84,11 +84,11 @@ body {
 }
 
 .filter-section .hotel-filter .checkmark {
-	width: 47px;
+	width: 48px;
 }
 
 .filter-section .hotel-filter .checkmark i {
-	margin-left: 3px;
+	margin-left: 1px;
 }
 
 .btn-style-2 {

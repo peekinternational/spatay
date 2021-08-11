@@ -48,7 +48,7 @@ body {
 
 .ceo-name {
   color: #de5921;
-  font-size: 36px;
+  font-size: 42px;
   text-transform: capitalize;
   font-weight: bold;
 
@@ -57,7 +57,7 @@ body {
 .ceo-designation {
   font-family: "Product Sans";
   color: #77808B;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 
@@ -201,7 +201,7 @@ body {
 
 .adjust-text {
   color: #fff !important;
-  margin-left: -2.75rem;
+  margin-left: -5.75rem;
 }
 .profilebox th {
   font-family: "Product sans";
@@ -217,10 +217,14 @@ table {
   border-collapse: collapse;
 }
 
-.profilebox th,
+/* .profilebox th,
 td {
   
   width: 88px;
+} */
+#basic-addon1
+{
+  /* padding-right: 2.5px; */
 }
 
 .profilebox tr th {
@@ -231,6 +235,10 @@ td {
   padding-bottom: 10px;
   padding-right: 20px;
   color: white;
+}
+.support-section .form-control
+{
+  padding: 0.475rem 0.75rem !important;
 }
 
 .table-text {
@@ -310,7 +318,7 @@ td {
 }
 .prof-box input::placeholder
 {
-  font-size: 16px !important;
+  font-size: 14px !important;
   color: #A1A1B4 !important;
   font-family: "Product sans",
   Sans-serif;
@@ -435,17 +443,19 @@ td {
 
 .cont-info {
   font-family: "Product sans", Sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   color: #FFFFFF;
-  font-weight: 500;
+  font-weight: bold;
  
 }
 
 .support-section .contact-det {
   font-family: "Product sans", Sans-serif;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   padding-bottom: 1rem;
   color: #FFFFFF;
+  letter-spacing: 1px;
   display: flex;
 }
 
@@ -481,8 +491,9 @@ td {
 }
 
 .short-section-heading {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
+  line-height: 31px;
   color: #1A1C3D;
   font-family: "Product sans",
     Sans-serif;
@@ -774,10 +785,9 @@ td {
 }
 .profilebox tr th {
   background-color: #1A1C3D;
-  width: 85px;
-  padding-left: 23px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 14px;
+  text-transform: uppercase;
+  padding-bottom: 14px;
   color: white;
 }
 
@@ -792,8 +802,14 @@ td {
   color: #A1A1B4;
   padding: .7rem .5rem !important;
   border-color: #A1A1B4;
-}.profilebox th, td {
-  width: 76px;
+}
+.disc-width
+{
+  width: 25%;
+}
+.disc-width2
+{
+  width: 42% !important;
 }
 
 /* booking card section */
@@ -1076,7 +1092,7 @@ td {
   font-family: "Product sans";
   font-size: 28px;
   color: #283646;
-  line-height: 36px;
+  line-height: 30px;
   font-weight: bold;
 }
 
@@ -1247,5 +1263,12 @@ td {
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
+  }
+}
+@media (min-width:996px)
+{
+  .dark-box
+  {
+    width: 238px;
   }
 }

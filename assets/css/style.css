@@ -74,9 +74,9 @@ body {
   font-weight: bold;
 }
 
-.nav-item .nav-link:hover {
+.nav-item .nav-link:hover,
+.nav-item .nav-link:hover:not(.active) .counter {
   color: #de5921 !important;
-  font-weight: bold;
 }
 
 .main-nav .nav-item .nav-link {
@@ -169,9 +169,37 @@ option {
 }
 
 .flightinfo-name {
-  font-size: 13px !important;
+  font-size: 12px !important;
   color: #A1A1B4;
+   font-family: "Product Sans";
   font-weight: bold;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: .87rem !important;
+  height: .87rem !important;
+  margin-left: auto;
+  content: "";
+  /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+}
+.responsive-flight-cards * {
+  white-space: nowrap;
+}
+
+.responsive-flight-cards>* {
+  flex-shrink: 0;
+}
+
+@media (max-width: 996px) {
+  .pia {
+    font-size: 13px !important;
+    margin-bottom: .75rem;
+  }
+
+  .selection-flight {
+    display: block;
+    width: 100%;
+  }
 }
 
 
@@ -281,11 +309,11 @@ option {
   /* left: 0; */
   height: 30px;
   width: 25px;
-  background-color: #de5921 !important;
+  background-color: #ff5915 !important;
   /* border-radius: 0; */
   padding: 5px 10px;
-  color: #A1A1B4;
-  border: 1px solid #A1A1B4;
+  color:white;
+  border: 1px solid white;
 }
 
 .time-dropdown .checkmark,
@@ -347,8 +375,9 @@ option {
 .timedropdown {
   padding: 10px !important;
   width: 14rem;
+  line-height: 13px;
   text-align: center;
-  font-size: 12px !important;
+  font-size: 10px !important;
   min-width: 6rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
   left: -132px;
@@ -464,7 +493,7 @@ option {
     overflow: auto;*/
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -54px;
+  left: -55px;
   text-transform: capitalize;
   width: 11rem;
 }
@@ -578,7 +607,7 @@ option {
 .tabs-section .nav-tabs .nav-link {
   color: #A1A1B4;
   font-family: "Product Sans";
-  font-size: 21px !important;
+  font-size: 24px !important;
 
 
 
@@ -688,16 +717,25 @@ th {
   font-family: "Product Sans";
   font-size: 18px !important;
   color: #1A1C3D;
+  /* width: 20% !important; */
   font-weight: bold;
 }
 
 td {
   font-family: "Product Sans";
-  font-size: 16px !important;
+  font-size: 14px !important;
   color: #A1A1B4;
   padding: .7rem .5rem !important;
   border-color: #A1A1B4;
 
+}
+.cf 
+{
+  width: 40% !important;
+}
+.changefee 
+{
+  width: 39% !important;
 }
 
 .econmy-section {
@@ -712,6 +750,10 @@ td {
   font-size: 17px !important;
   color: #A1A1B4;
 
+}
+.phone::placeholder
+{
+  color: #A1A1B4 !important;
 }
 
 .price-weight {
@@ -1086,14 +1128,6 @@ hr {
   background-color: #EBECF0;
   display: inline-block;
 }
-.booking-process .nav-tabs .nav-link .counter:hover {
-  height: 40px;
-  width: 40px;
-  color: #de5921;
-  border-radius: 100%;
-  background-color: #EBECF0;
-  display: inline-block;
-}
 
 .booking-process .nav-tabs .nav-link.active .counter {
   background-color: #DE5921;
@@ -1147,7 +1181,7 @@ hr {
 }
 
 .labelfullname {
-  font-size: 38px;
+  font-size: 50px;
   color: #DE5921;
   font-family: "Product Sans";
   font-weight: bold;
@@ -1218,21 +1252,23 @@ hr {
 #managebooking-btn {
   /* background-color: #DE5921; */
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid #A1A1B4;
   color: #A1A1B4;
+  padding: 8px 0px;
    font-weight: 500;
-   width: 250px;
+   width: 318px;
  
 }
 
 #printpage-btn {
   background-color: #1A1C3D;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   border: 1px solid #A1A1B4;
   color: white;
-  width: 250px;
+  padding: 8px 0px;
+  width: 318px;
   font-weight: 500;
   margin-left: 10px;
  
@@ -1890,7 +1926,7 @@ hr {
   margin-left: auto;
   content: "";
   background-repeat: no-repeat;
-  background-size: 1rem !important;
+  background-size: .9rem !important;
   transition: transform .2s ease-in-out;
   background-image: url(../media/toogle-arrow.png) !important;
   transform-origin: center center;
@@ -1901,11 +1937,12 @@ hr {
 }
 
 .deslect {
-  font-size: 13px;
+  font-size: 10px;
   color: #A1A1B4;
   text-align: end;
+  line-height: 11px;
   text-transform: initial;
-  margin-top: 5px;
+  margin-top: 8px;
   text-decoration: none;
 }
 
@@ -1917,7 +1954,6 @@ hr {
   font-size: 10px;
   color: #A1A1B4;
   text-align: end;
-  text-transform: capitalize;
   margin-top: 12px;
   text-decoration: none;
 }
@@ -1961,16 +1997,16 @@ hr {
 }
 
 .propety-class-dropdown-star {
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .filter-section .hotel-filter #stop-filter .show {
   padding: 10px;
-  width: 179px;
+  width: 183px;
   min-width: 5rem;
   padding-bottom: 1rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -11px;
+  left: -15px;
 }
 
 .filter-section .hotel-filter .checkmark:hover {
@@ -1982,9 +2018,8 @@ hr {
 
 .filter-section .hotel-filter .checkmark {
   height: 38px;
-  width: 30px;
   background-color: transparent;
-  padding: 5px 10px;
+  font-size: 23px;
   display: flex;
   align-items: center;
   color: #ccc;
